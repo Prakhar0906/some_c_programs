@@ -35,4 +35,23 @@ int Rand(void){
 void sRand(unsigned int seed){
 	next = seed;
 }
+// deleat all c from s
+void sqeeze(char s[],int c){
+	int i,j;
 
+	for(i=j=0;s[i] != '\0';i++)
+		if(s[i]!=c)
+			s[j++] = s[i];
+	s[j] = '\0';
+
+}
+
+void strcast(char s[], char t[]){
+	int i,j;
+	i = j = 0;
+
+	while(s[i] != '\0')
+		i++;
+	while((s[i++] = t[j++]) != '\0')
+			;
+}
