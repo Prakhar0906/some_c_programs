@@ -18,6 +18,7 @@ int main(){
 	char s[MAXOP];
 
 	while((type = getop(s)) != EOF){
+		printf("getop not eof\n");
 		switch(type){
 			case NUMBER:
 				push(atof(s));
@@ -85,6 +86,7 @@ int getop(char s[]){
 	s[i] = '\0';
 	if(c != EOF)
 		ungetch(c);
+	printf("Getop operation successful\n");
 	return NUMBER;
 }
 #define BUFSIZE 100
